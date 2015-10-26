@@ -1,16 +1,17 @@
 #!/bin/bash
 
-safe_copy() {
+replace() {
     src=$1
     dest=$2
     if [[ -f $dest/$src ]]; then
-        echo "file already exists!"
-    else
+        rm $dest/$src
         cp $src $dest
+    else
+        cp $src $dest/
     fi
 }
 
-safe_copy i3-gnome /usr/bin/
-safe_copy i3-gnome.desktop /usr/share/applications/
-safe_copy i3-gnome.session /usr/share/gnome-session/sessions/
-safe_copy i3-gnome.desktop /usr/share/xsessions/
+replace i3-gnome /usr/bin
+replace i3-gnome.desktop /usr/share/applications
+replace i3-gnome.session /usr/share/gnome-session/sessions
+replace i3-gnome.desktop /usr/share/xsessions
