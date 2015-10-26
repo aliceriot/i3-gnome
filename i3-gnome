@@ -15,7 +15,7 @@ gsettings set org.gnome.settings-daemon.plugins.xsettings overrides '@a{sv} {"Gt
 # gsettings set org.gnome.desktop.background show-desktop-icons false
 
 if [[ -f ~/.i3-gnome ]]; then
-    ./i3-gnome
+    source ~/.i3-gnome
 fi
 
 exec i3
