@@ -14,8 +14,4 @@ gsettings set org.gnome.settings-daemon.plugins.xsettings overrides '@a{sv} {"Gt
 # Nautilus shall not handle the desktop.
 # gsettings set org.gnome.desktop.background show-desktop-icons false
 
-if [[ -f ~/.i3-gnome ]]; then
-    source ~/.i3-gnome
-fi
-
 exec i3
