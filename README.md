@@ -1,4 +1,4 @@
-#i3 + GNOME = <3
+# i3 + GNOME = <3
 
 This is a quick little script to enable you to use the
 [i3](http://i3wm.org/) tiling window manager with a normal Gnome
@@ -6,6 +6,6 @@ This is a quick little script to enable you to use the
 
 The files used are from [here](https://github.com/lvillani/i3-gnome).
 
-##Usage
+## Usage
 
 Just clone the repo and do `sudo ./setup.sh`. 
